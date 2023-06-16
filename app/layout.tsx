@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import Head from 'next/head'
 
 
 export const metadata: Metadata = {
@@ -35,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <Head />                
+        <head />                
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
