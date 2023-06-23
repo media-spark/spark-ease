@@ -8,9 +8,9 @@ const Logo = () => {
   const { theme } = useTheme();
 
   return (
-    theme === "light" ? (
+    theme === "dark" ? (
       <Image
-        src="/black.svg"
+        src="/white.svg"
         alt="Logo"
         width="512"
         height="512"
@@ -18,7 +18,7 @@ const Logo = () => {
       />
     ) : (
       <Image
-        src="/white.svg"
+        src="/black.svg"
         alt="Logo"
         width="512"
         height="512"
