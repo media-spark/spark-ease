@@ -5,22 +5,13 @@ import {
   Twitter,
   type Icon as LucideIcon,
 } from "lucide-react"
-import Image from "next/image"
 
 export type Icon = LucideIcon
 
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
-  twitter: Twitter,
-  logo: (props: LucideProps) => (
-    <Image 
-      src="/black-white.svg" 
-      alt="Logo" 
-      width="512" 
-      height="512"
-      className="w-16" />
-  ),
+  twitter: Twitter,  
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
@@ -30,3 +21,4 @@ export const Icons = {
     </svg>
   ),
 }
+
