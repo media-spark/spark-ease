@@ -3,12 +3,17 @@
 import { useTheme } from "next-themes";
 import Image from "next/image"
 
-const Logo = () => {
+interface LogoProps {
+  force?: string,
+}
+
+const Logo = ({force} : LogoProps) => {
 
   const { theme } = useTheme();
+  const value = force || theme;
 
   return (
-    theme === "dark" ? (
+    value === "dark" ? (
       <Image
         src="/white.svg"
         alt="Logo"
